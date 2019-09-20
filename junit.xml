@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" time="5.536">
+  <testsuite name="button" errors="0" failures="0" skipped="0" timestamp="2019-09-02T03:26:27" time="3.13" tests="1">
+    <testcase classname="button 是个 div" name="button 是个 div" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2019-09-02T03:26:28" time="3.138" tests="5">
+    <testcase classname="classes 接受一个 className" name="classes 接受一个 className" time="0.004">
+    </testcase>
+    <testcase classname="classes 接受两个 className" name="classes 接受两个 className" time="0">
+    </testcase>
+    <testcase classname="classes 参数带 undefined" name="classes 参数带 undefined" time="0.001">
+    </testcase>
+    <testcase classname="classes 多个奇怪的参数" name="classes 多个奇怪的参数" time="0">
+    </testcase>
+    <testcase classname="classes 没有参数" name="classes 没有参数" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2019-09-02T03:26:27" time="3.243" tests="2">
+    <testcase classname="icon render successfully" name="icon render successfully" time="0.013">
+    </testcase>
+    <testcase classname="icon Icon 被点击" name="icon Icon 被点击" time="0.041">
+    </testcase>
+  </testsuite>
+</testsuites>
