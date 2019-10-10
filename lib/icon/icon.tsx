@@ -1,11 +1,11 @@
-import React from 'react';
-import '../importIcons';
+import * as React from 'react';
+import './importIcons';
 import './icon.scss';
 import classes from '../helpers/classes';
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
     name: string;
-    onClick: React.MouseEventHandler<SVGElement>
+    onClick?: React.MouseEventHandler<SVGElement>
 }
 
 const Icon: React.FunctionComponent<IconProps> = ({className, name, ...restProps}) => {
