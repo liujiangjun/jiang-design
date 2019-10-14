@@ -2,6 +2,9 @@ import React, {ReactElement} from 'react';
 import {scopedClassMaker} from "../helpers/classes";
 import './layout.scss';
 import Aside from "./aside";
+import Header from './header';
+import Content from './content';
+import Footer from './footer';
 
 const sc = scopedClassMaker('jui-layout')
 
@@ -22,3 +25,6 @@ const Layout: React.FunctionComponent<Props> = ({children, className, ...rest}) 
 }
 
 export default Layout
+
+export { Header, Content, Footer, Aside }
+
