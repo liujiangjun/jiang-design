@@ -10,8 +10,8 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
 }
 
 const Layout: React.FunctionComponent<Props> = ({children, className, ...rest}) => {
-    const x = children as Array<ReactElement>
-    const hasAside = length in x && x.reduce((accumulate, current) => (
+    const innerChildren = children as Array<ReactElement>
+    const hasAside = 'length' in innerChildren && innerChildren.reduce((accumulate, current) => (
         accumulate || current.type === Aside
     ), false)
     return (
