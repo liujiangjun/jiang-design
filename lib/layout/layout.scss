@@ -1,0 +1,24 @@
+@import '../_helper';
+
+.jui-layout {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  &-aside {
+    border: 1px solid yellow;
+  }
+  & & {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  &-content {
+    flex-grow: 1;
+    border: 1px solid green;
+  }
+  &-hasAside {
+    flex-direction: row;
+    .jui-layout {
+      flex-direction: column;
+    }
+  }
+}
