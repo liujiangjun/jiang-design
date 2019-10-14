@@ -27,7 +27,7 @@ describe('scopedClassMaker', () => {
     it('接受字符串或对象', () => {
         const sc = scopedClassMaker('jui-layout')
         expect(sc('')).toEqual('jui-layout')
-        expect(sc('x')).toEqual('jui-layout-x')
+        expect(sc('Demo')).toEqual('jui-layout-Demo')
         expect(sc(0)).toEqual('jui-layout-0')
         expect(sc({xxx: true, yyy: true})).toEqual('jui-layout-xxx jui-layout-yyy')
         expect(sc({xxx: true, yyy: false})).toEqual('jui-layout-xxx')

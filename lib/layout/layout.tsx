@@ -17,6 +17,7 @@ const Layout: React.FunctionComponent<Props> = ({children, className, ...rest}) 
     const hasAside = 'length' in innerChildren && innerChildren.reduce((accumulate, current) => (
         accumulate || current.type === Aside
     ), false)
+    console.log('hasAside', hasAside)
     return (
         <div className={sc({'': true, hasAside}, {extra: className})} {...rest}>
             {children}

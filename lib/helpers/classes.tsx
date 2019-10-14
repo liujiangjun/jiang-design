@@ -13,10 +13,11 @@ function classes(...names: (string | undefined)[]) {
 export default classes
 
 const scopedClassMaker = (prefix: string) =>
-    (name?: string | ClassToggles | undefined, options?: Extra) =>
+    (name: string  | ClassToggles | undefined = '', options?: Extra) =>
         Object
             .entries(name instanceof Object ? name : {[name as string]: name})
             .filter(kv => kv[1] !== false)
+            .filter(kv => kv[1] != null)
             .map(kv => kv[0])
             .map(name => [prefix, name]
                 .filter(Boolean)

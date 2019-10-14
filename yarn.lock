@@ -1459,12 +1459,12 @@ ajv-errors@^1.0.0:
   resolved "http://r.cnpmjs.org/ajv-errors/download/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
   integrity sha1-81mGrOuRr63sQQL72FAUlQzvpk0=
 
-ajv-keywords@^3.1.0:
+ajv-keywords@^3.1.0, ajv-keywords@^3.4.1:
   version "3.4.1"
   resolved "http://r.cnpmjs.org/ajv-keywords/download/ajv-keywords-3.4.1.tgz#ef916e271c64ac12171fd8384eaae6b2345854da"
   integrity sha1-75FuJxxkrBIXH9g4TqrmsjRYVNo=
 
-ajv@^6.1.0, ajv@^6.5.5:
+ajv@^6.1.0, ajv@^6.10.2, ajv@^6.5.5:
   version "6.10.2"
   resolved "http://r.cnpmjs.org/ajv/download/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
   integrity sha1-086gTWsBeyiUrWkED+yLYj60vVI=
@@ -6396,6 +6396,11 @@ pretty-format@^24.9.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
+prism-react-renderer@^1.0.1:
+  version "1.0.1"
+  resolved "http://r.cnpmjs.org/prism-react-renderer/download/prism-react-renderer-1.0.1.tgz#98a437b01a5e48f140ae2321a95fa6693d4fe9de"
+  integrity sha1-mKQ3sBpeSPFAriMhqV+maT1P6d4=
+
 private@^0.1.6:
   version "0.1.8"
   resolved "http://r.cnpmjs.org/private/download/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -6599,6 +6604,14 @@ raw-body@2.4.0:
     http-errors "1.7.2"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+raw-loader@^3.1.0:
+  version "3.1.0"
+  resolved "http://r.cnpmjs.org/raw-loader/download/raw-loader-3.1.0.tgz#5e9d399a5a222cc0de18f42c3bc5e49677532b3f"
+  integrity sha1-Xp05mloiLMDeGPQsO8XklndTKz8=
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^2.0.1"
 
 rc@^1.2.7:
   version "1.2.8"
@@ -7123,6 +7136,14 @@ schema-utils@^2.0.0:
   dependencies:
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
+
+schema-utils@^2.0.1:
+  version "2.4.1"
+  resolved "http://r.cnpmjs.org/schema-utils/download/schema-utils-2.4.1.tgz#e89ade5d056dc8bcaca377574bb4a9c4e1b8be56"
+  integrity sha1-6JreXQVtyLyso3dXS7SpxOG4vlY=
+  dependencies:
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
